@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="img/logo.png" />
+    <meta
+      name="selfwork.ru"
+      content="ojt0iyxJH2O9KhgeB6KFNaWpQwM9sjC8CFlCF7DnLe27gUUtuk"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="canonical" href="" />
+
+    <meta name="description" content="Пополнить стим" />
+    <meta name="Keywords" content="Пополнить стим" />
+    <title>Пополнить стим</title>
+  </head>
+
+  <body>
+    <section>
+      <div class="header">
+        <div class="wrapper">
+          <div class="header-nav">
+            <div class="logo">
+              <div class="logo-img">
+                <img src="img/logo.png" title="Пополнение стим" alt="Logo" />
+              </div>
+              <h2 class="logo-text">log</h2>
+            </div>
+            <nav class="nav">
+              <a href="#form">Пополнение баланса</a>
+              <a href="#reviews">Отзывы</a>
+              <a href="#faq">FAQ</a>
+            </nav>
+            <div class="header-online">
+              <div class="online-img">
+                <img
+                  src="img/world-grid.png"
+                  title="Онлайн сервиса пополнения steam"
+                  alt="Онлайн сервиса пополнения steam"
+                />
+              </div>
+              <div class="online-text">
+                <p id="online"></p>
+                <p>online</p>
+              </div>
+            </div>
+            <nav class="nav-mobile">
+              <div class="nav-mobile-links">
+                <a href="#form">Пополнение баланса</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#faq">FAQ</a>
+              </div>
+              <div class="mobile-link">
+                <a class="support_link" href="" target="_blank">
+                  <p class="support-chat-img">
+                    <img
+                      src="img/chat.png"
+                      title="Поддержка сервиса пополнения стим"
+                      alt="Поддержка сервиса пополнения стим"
+                    />
+                  </p>
+                  Поддержка
+                </a>
+              </div>
+            </nav>
+
+            <div class="header-support">
+              <a class="support_link" href="" target="_blank">
+                <p class="support-chat-img">
+                  <img
+                    src="img/chat.png"
+                    title="Поддержка сервиса пополнения стим"
+                    alt="Поддержка сервиса пополнения стим"
+                  />
+                </p>
+                Поддержка
+              </a>
+            </div>
+            <div class="burger">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="form" class="pt">
+      <div class="wrapper">
+        <div class="info-line">
+          <div class="info-img">
+            <img
+              src="img/info.png"
+              title="Информация сервиса пополнение баланса стим"
+              alt="Информация сервиса пополнение баланса стим"
+            />
+          </div>
+          <h2>Акция -</h2>
+          <!--<h2>Уважаемые пользователи! По техническим причинам, приём платежей и пополнение баланса steam временно не доступны.</h2>-->
+        </div>
+        <div class="title">
+          <h1>Пополнить стим</h1>
+          <h2 class="works-btn">Как это работает?</h2>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrapper">
+        <div class="form">
+          <form class="form__inputs" id="myForm">
+            <div class="input_wrap form__login">
+              <input
+                placeholder="Введите логин"
+                id="login"
+                type="text"
+                value=""
+                required
+              />
+              <div class="form__login-lodaer">
+                <img
+                  class="lodaer-img"
+                  title="Логин для пополнение стим без комиссии"
+                  src="img/loading-arrow.png"
+                  alt="loading-arrow"
+                />
+              </div>
+
+              <h4 class="login-help" id="login-btn">Логин?</h4>
+              <div class="form-img">
+                <img
+                  src="img/login.svg"
+                  title="Логин для пополнение стим без комиссии"
+                  alt="Логин для пополнение стим без комиссии"
+                />
+              </div>
+            </div>
+
+            <div class="input_wrap form__amount">
+              <input
+                type="number"
+                placeholder="Сумма пополнения"
+                value=""
+                id="amount"
+                min="100"
+                max="15000"
+                required
+              />
+              <div class="form-img">
+                <div class="form-val">от 100 до 15000</div>
+                <img
+                  src="img/rub.svg"
+                  title="Сумма для пополнение steam без комиссии"
+                  alt="Сумма для пополнение steam без комиссии"
+                />
+              </div>
+            </div>
+            <ul>
+              <li class="valueNum" id="100">100₽</li>
+              <li class="valueNum" id="200">200₽</li>
+              <li class="valueNum" id="500">500₽</li>
+              <li class="valueNum" id="1000">1000₽</li>
+            </ul>
+            <div class="checkbox">
+              <input
+                type="checkbox"
+                class="custom-checkbox"
+                id="happy"
+                name="happy"
+                value="yes"
+                checked
+                required
+              />
+              <label for="happy"
+                ><div class="checkbox-text">
+                  Я ознакомлен и согласен с условиями
+                  <a
+                    target="_blank"
+                    class="checkbox-link"
+                    href="files/TermsOfUse.pdf"
+                    >пользовательского соглашения</a
+                  >
+                </div></label
+              >
+            </div>
+            <div class="method method-respons">
+              <div class="method_wrap">
+                <div class="method-cards">
+                  <div class="method-card card-active">
+                    <img
+                      src="img/sbp.png"
+                      title="Пополнение стим через сбп"
+                      alt="Пополнение стим через сбп"
+                    />
+                  </div>
+
+                  <div class="method-card">
+                    <img
+                      src="img/mir.png"
+                      title="Пополнение стим через мир"
+                      alt="Пополнение стим через мир"
+                    />
+                  </div>
+                  <div class="method-card">
+                    <img
+                      src="img/mc.png"
+                      title="Пополнение steam через карту"
+                      alt="Пополнение steam через карту"
+                    />
+                  </div>
+                  <div class="method-card">
+                    <img
+                      src="img/visa.svg"
+                      title="Пополнение стим через карту"
+                      alt="Пополнение стим через карту"
+                    />
+                  </div>
+                  <div class="method-card">
+                    <img
+                      src="img/UnionPay.svg"
+                      title="Пополнение кошелька стим через"
+                      alt="Пополнение кошелька стим через"
+                    />
+                  </div>
+                  <!-- <div class="method-card-soon">
+                                    <div class="card-hiden">
+                                        <p>скоро</p>
+                                    </div><img src="img/qiwi.png" title="Пополнение стим через киви"
+                                        alt="Пополнение стим через киви">
+                                </div>
+                                <div class="method-card-soon">
+                                    <div class="card-hiden">
+                                        <p>скоро</p>
+                                    </div><img src="img/yPay.webp" title="Пополнение стим через яндекс"
+                                        alt="Пополнение стим через яндекс">
+                                </div> -->
+                </div>
+              </div>
+              <div class="method_sum">
+                <div>К оплате:</div>
+                <div class="method-line"></div>
+                <div class="all-sum">0 ₽</div>
+              </div>
+              <div class="method_sum">
+                <div>К зачислению:</div>
+                <div class="method-line"></div>
+                <div class="enrollment-sum">0 ₽</div>
+              </div>
+              <div class="method_sum">
+                <div>Комиссия сервиса:</div>
+                <div class="method-line"></div>
+                <div class="commission-ser">0 ₽</div>
+              </div>
+              <div class="method_sum method_sum-all">
+                <div>Банковские издержки:</div>
+                <div class="method-line"></div>
+                <div class="commission-bank">0 ₽</div>
+              </div>
+            </div>
+            <div class="input_wrap form__btn">
+              <input type="submit" id="checkLogin" value="Пополнить" />
+              <div class="form__btn-loading">
+                <img src="img/loading.png" alt="lodaing" />
+              </div>
+            </div>
+          </form>
+          <div class="method method-full">
+            <div class="method_wrap">
+              <div class="method-cards">
+                <div class="method-card card-active">
+                  <img
+                    src="img/sbp.png"
+                    title="Пополнение стим через сбп"
+                    alt="Пополнение стим через сбп"
+                  />
+                </div>
+                <div class="method-card">
+                  <img
+                    src="img/mir.png"
+                    title="Пополнение стим через мир"
+                    alt="Пополнение стим через мир"
+                  />
+                </div>
+                <div class="method-card">
+                  <img
+                    src="img/mc.png"
+                    title="Пополнение steam через карту"
+                    alt="Пополнение steam через карту"
+                  />
+                </div>
+                <div class="method-card">
+                  <img
+                    src="img/visa.svg"
+                    title="Пополнение стим через карту"
+                    alt="Пополнение стим через карту"
+                  />
+                </div>
+                <div class="method-card">
+                  <img
+                    src="img/UnionPay.svg"
+                    title="Пополнение кошелька стим через"
+                    alt="Пополнение кошелька стим через"
+                  />
+                </div>
+                <!-- <div class="method-card-soon">
+                                <div class="card-hiden">
+                                    <p>скоро</p>
+                                </div><img src="img/qiwi.png" title="Пополнение стим через киви"
+                                    alt="Пополнение стим через киви">
+                            </div>
+                            <div class="method-card-soon">
+                                <div class="card-hiden">
+                                    <p>скоро</p>
+                                </div><img src="img/yPay.webp" title="Пополнение стим через яндекс"
+                                    alt="Пополнение стим через яндекс">
+                            </div> -->
+              </div>
+            </div>
+            <div class="method_sum">
+              <div>К оплате:</div>
+              <div class="method-line"></div>
+              <div class="all-sum">0 ₽</div>
+            </div>
+            <div class="method_sum">
+              <div>К зачислению:</div>
+              <div class="method-line"></div>
+              <div class="enrollment-sum">0 ₽</div>
+            </div>
+            <div class="method_sum">
+              <div>Комиссия сервиса:</div>
+              <div class="method-line"></div>
+              <div class="commission-ser">0 ₽</div>
+            </div>
+            <div class="method_sum method_sum-all">
+              <div>Банковские издержки:</div>
+              <div class="method-line"></div>
+              <div class="commission-bank">0 ₽</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="pt">
+      <div class="wrapper">
+        <div class="reviews">
+          <h2>Нам доверяют</h2>
+          <div class="reviews__items">
+            <a target="_blank" href="" class="reviews__item">
+              <div class="reviews__logo">
+                <img src="img/Avito.png" alt="avito-logo" />
+              </div>
+              <div class="reviews__grade">
+                <img src="img/star.png" alt="star" />
+                <p>0</p>
+              </div>
+            </a>
+            <a target="_blank" href="" class="reviews__item">
+              <div class="reviews__logo">
+                <img src="img/yandex1.png" alt="yandex-logo" />
+              </div>
+              <div class="reviews__grade">
+                <img src="img/star.png" alt="star" />
+                <p>0,0</p>
+              </div>
+            </a>
+            <a target="_blank" href="" class="reviews__item">
+              <div class="reviews__logo">
+                <img src="img/norton.png" alt="norton-logo" />
+              </div>
+              <div class="reviews__grade">
+                <img src="img/star.png" alt="star" />
+                <p>0</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt">
+      <div class="wrapper">
+        <div class="swiper reviews">
+          <h2>Отызвы</h2>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slide-item">
+                <h3>Александр</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. A
+                  sint ut nobis facere illo temporibus beatae nesciunt. Vel
+                  nobis sed suscipit minima. Maxime eveniet ab, sed repudiandae
+                  blanditiis sit voluptatum!
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-item">
+                <h3>Сергей</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Impedit eveniet vel rerum unde sapiente ipsum molestiae, quis
+                  beatae id laudantium inventore, neque similique cumque
+                  incidunt, pariatur delectus distinctio ex totam!
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-item">
+                <h3>Никита</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam aperiam omnis nesciunt. Culpa, fuga fugit cumque
+                  alias voluptatibus voluptate tempora, a eos magnam doloremque
+                  sit! Odit, voluptate hic! Suscipit, voluptates!
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-item">
+                <h3>Антон</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Cumque natus nulla earum, officia eaque alias. Odio modi ad
+                  excepturi expedita ipsa dolores, magni doloremque. Vitae harum
+                  nobis atque expedita esse.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-item">
+                <h3>Андрей</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. At
+                  facilis laborum dolorum, itaque, fugit amet necessitatibus
+                  voluptatum quaerat magni, illum sapiente quos! Nemo
+                  exercitationem illo doloremque, expedita ab similique fuga.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-item">
+                <h3>Марк</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus voluptatibus eveniet expedita ipsa. Tenetur
+                  dolores, enim ipsum deserunt, modi culpa hic ea iste eligendi
+                  blanditiis consequuntur maxime placeat numquam nisi.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-item">
+                <h3>Сергей</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                  delectus blanditiis dolore maxime dignissimos facilis, quo ad
+                  praesentium molestias? Beatae non pariatur modi voluptas
+                  praesentium saepe sint nemo veritatis ipsum!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="pt">
+      <div class="wrapper">
+        <h2 class="faq-title">FAQ</h2>
+        <div class="faq_cointent">
+          <div class="accordion">
+            <div class="accordion-header">
+              Прочитайте этот гайд для первого пополнения баланса на новом
+              аккаунте.
+            </div>
+            <div class="accordion-body">
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                  commodi, ea quam animi repellendus ab, nostrum, eius doloribus
+                  quos accusantium quis omnis voluptatem? Molestias quos
+                  consectetur harum laudantium quo sed.
+                  <span>1. Lorem ipsum dolor sit amet.</span>
+                  <span
+                    >2. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Autem, ullam!</span
+                  >
+                  <span
+                    >3. Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit. Distinctio aut eos veniam eaque, eum blanditiis quo
+                    inventore consequuntur laborum ab.</span
+                  >
+                  <span class="accordion-ps"
+                    >P.S: Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Aliquid porro quam a quibusdam voluptates sed eveniet.
+                    Velit laboriosam laborum adipisci repellat repellendus alias
+                    aliquam dicta.</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion-header">Lorem ipsum dolor sit amet.</div>
+            <div class="accordion-body">
+              <div>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae
+                  fugiat esse vero quisquam provident facere qui voluptate iusto
+                  sapiente velit debitis ratione placeat ipsam dolore, quidem ad
+                  voluptates, natus obcaecati.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion-header">Lorem, ipsum dolor.</div>
+            <div class="accordion-body">
+              <div>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus deserunt ullam hic doloribus quam numquam beatae,
+                  ipsa dignissimos explicabo! Architecto quisquam commodi quod
+                  voluptate qui esse assumenda aut in sed?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion-header">
+              Lorem ipsum dolor, sit amet consectetur adipisicing.
+            </div>
+            <div class="accordion-body">
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                  voluptatem illum, aperiam mollitia aut laudantium ipsum optio
+                  beatae fugit natus sequi impedit expedita? Quos provident
+                  doloremque, esse accusantium quas excepturi?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion-header">Lorem ipsum dolor sit.</div>
+            <div class="accordion-body">
+              <div>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Nobis laudantium dicta nesciunt labore reprehenderit.
+                  Exercitationem in fugit, minima quibusdam iste nihil natus
+                  molestias voluptatum facere harum molestiae porro ut ducimus!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion-header">Lorem ipsum dolor sit amet.</div>
+            <div class="accordion-body">
+              <div>
+                <p>
+                  <span>Вариант с VPN </span>
+                  <span> Lorem ipsum dolor sit amet.</span>
+
+                  <span>
+                    1. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </span>
+                  <span> 2. Lorem, ipsum. </span>
+                  <span>
+                    3. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </span>
+                  <span> 4. Lorem ipsum dolor sit. </span>
+                  <span>
+                    5. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Soluta, quia.
+                  </span>
+                  <span> 6. Lorem, ipsum. </span>
+                  <span class="accordion-ps">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A.
+                  </span>
+
+                  <span class="accordion-ps"> Вариант с оффлайном </span>
+                  <span> 1. Lorem, ipsum.</span>
+                  <span> 2. Lorem ipsum dolor sit amet. </span>
+                  <span>
+                    3. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Deserunt.
+                  </span>
+                  <span>
+                    4. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    A harum obcaecati nulla aut autem sed, sint ea vero.
+                    Molestiae perspiciatis hic veniam nulla quibusdam molestias
+                    laboriosam mollitia excepturi sint voluptate!
+                  </span>
+                  <span class="accordion-ps">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
+                    neque, architecto quam rerum repellendus sunt sequi?
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion-header">
+              Lorem ipsum dolor sit amet consectetur.
+            </div>
+            <div class="accordion-body">
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis animi fugiat alias sint nam. Beatae earum totam error,
+                  ipsa explicabo debitis, optio dicta animi ratione amet illo
+                  consectetur, consequuntur doloremque!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion-header">
+              Lorem ipsum dolor sit amet consectetur adipisicing.
+            </div>
+            <div class="accordion-body">
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloremque ad eos quidem harum veniam libero, perspiciatis
+                  repellendus ex. Maxime velit a dolore repudiandae! Temporibus
+                  aliquid, maxime vel saepe sapiente alias.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="popup-login" class="popup">
+      <div class="prpup-wrap">
+        <div class="popup-content popup-login">
+          <div class="login-info">
+            <h2>Логин можно найти в разделе "Об аккаунте"</h2>
+            <p>
+              Обратите внимание! Логин, это то, что вы указываете при входе в
+              Steam. Если вы укажите неверный логин, то средства уйдут другому
+              пользователю.
+              <a href="https://store.steampowered.com/account/" target="_blank"
+                >Взять вы его можете тут</a
+              >
+            </p>
+          </div>
+          <div class="login-img">
+            <img
+              src="img/login.png"
+              title="Пополнение стим через логин"
+              alt="Пополнение стим через логин"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="popup-works" class="popup">
+      <div class="prpup-wrap">
+        <div class="popup-content popup-works">
+          <div class="works-item">
+            <div class="works-item-img">
+              <img
+                src="img/steam1.png"
+                title="Логин для пополнение стим без комиссии"
+                alt="Логин для пополнение стим без комиссии"
+              />
+            </div>
+            <h2>Введите свой логин Steam</h2>
+            <div class="works-hdn">
+              Логин, это то, что вы указываете при входе в Steam.
+              <a href="https://store.steampowered.com/account/" target="_blank"
+                >Взять вы его можете тут</a
+              >
+            </div>
+          </div>
+          <div class="works-item">
+            <div class="works-item-img">
+              <img
+                src="img/cash.png"
+                title="Сумма для пополнение стим без комиссии"
+                alt="Сумма для пополнение стим без комиссии"
+              />
+            </div>
+            <div>Укажите желаемую сумму пополнения</div>
+            <div class="works-hdn">
+              Минимальная сумма платежа 100₽, максимум 15 000 рублей с учетом
+              комиссии
+            </div>
+          </div>
+          <div class="works-item">
+            <div class="works-item-img">
+              <img
+                src="img/cards.png"
+                title="Пополнить стим любым удобным способом"
+                alt="Пополнить стим любым удобным способом"
+              />
+            </div>
+            <div>Оплатить любым удобным способом</div>
+          </div>
+          <div class="works-item">
+            <div class="works-item-img">
+              <img
+                src="img/bank.png"
+                title="Пополнить баланс стим"
+                alt="Пополнить баланс стим"
+              />
+            </div>
+            <div>Получить деньги на баланс Steam!</div>
+            <div class="works-hdn">
+              Деньги прийдут на баланс Steam в течении 3-15 минут!
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt">
+      <div class="wrapper">
+        <div class="support">
+          <h3>Поддержка</h3>
+          <p>
+            Специалисты клиентского сервиса помогут вам осуществить пополнение и
+            ответят на ваши вопросы
+          </p>
+          <div class="support_links">
+            <a class="support_link" href="">
+              <p class="support-chat-img">
+                <img
+                  src="img/chat.png"
+                  title="Общий чат сервиса пополние баланса стим"
+                  alt="Общий чат сервиса пополние баланса стим"
+                />
+              </p>
+              Общий чат
+            </a>
+            <a class="support_link" href="">
+              <p class="support-chat-img">
+                <img
+                  src="img/telegram.png"
+                  title="Поддержка сервиса пополние баланса стим"
+                  alt="Поддержка сервиса пополние баланса стим"
+                />
+              </p>
+              Поддержка в Telegram
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <footer class="wrapper">
+        <div class="footer">
+          <div class="logo">
+            <div class="logo-img">
+              <img
+                src="img/logo.png"
+                title="Пополнение стима Россия, Казахстан, Турция"
+                alt="Logo"
+              />
+            </div>
+            <h2 class="logo-text">steam</h2>
+          </div>
+          <div class="footer-link">
+            <div>
+              <a href="files/TermsOfUse.pdf" target="_blank"
+                >Пользовательское соглашение</a
+              >
+            </div>
+            <div>
+              <a href="files/PrivacyPolicy.pdf" target="_blank"
+                >Политика конфиденциальности</a
+              >
+            </div>
+          </div>
+          <div class="footer-copy">
+            <a target="_blank" href=""
+              ><img
+                src="img/norton.svg"
+                title="Безопасное пополнение стима Россия, Казахстан, Турция"
+                alt=""
+            /></a>
+            <span>© steam 2025</span>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/online.js"></script>
+  </body>
+</html>
