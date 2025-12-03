@@ -35,6 +35,8 @@ input {
 
 body {
   background: var(--bg-color);
+  background-image: url(/img/bg-mob.webp);
+  background-size: 100%;
 }
 
 section {
@@ -344,9 +346,16 @@ section:first-child {
   display: flex;
   margin-bottom: 3rem;
   align-items: center;
-  padding: 18px 12px;
-  background: #1a9fff;
+  padding: 28px 12px;
+  background-image: url(/img/bg-games.jpg);
+  background-size: 100%;
   border-radius: 12px;
+}
+
+.info-line::before {
+  content: '';
+  background: black;
+  filter: brightness(50%);
 }
 
 .info-img {
