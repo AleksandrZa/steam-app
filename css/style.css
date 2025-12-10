@@ -88,6 +88,8 @@ section:first-child {
   position: relative;
   width: 60px;
   height: 60px;
+  /* background: #ffffff; */
+  border-radius: 50%;
 }
 
 .logo-text {
